@@ -4,7 +4,7 @@ DEPS = wpa_ctrl.h
 INC+=-I./
 LIBS+=-lwpa_client -lrt
 
-test: main.c
+test: test.c
 	$(CC) $(INC) $< $(CFLAG) $(LIBS) -o $@
 
 clean:
